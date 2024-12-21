@@ -94,7 +94,7 @@ h1::selection{
     background-color: rgb(151, 121, 0);
     color: cornsilk;
 }
-#plyBtn{
+.plyBtn{
     background-color: rgb(197, 162, 24);
     color: cornsilk;
     font-weight: 500;
@@ -103,13 +103,13 @@ h1::selection{
     border: none;
     border-radius: 20px;
 }
-#plyBtn:hover{
-    cursor: pointer;
-    background-color: rgb(168, 135, 0);
-}
-#playBtn::selection{
+.plyBtn::selection{
     color: rgb(197, 162, 24);
     background-color: cornsilk;
+}
+.plyBtn:hover{
+    cursor: pointer;
+    background-color: rgb(168, 135, 0);
 }
 
 @media (max-width: 768px){

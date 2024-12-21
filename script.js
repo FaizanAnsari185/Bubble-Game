@@ -13,7 +13,7 @@ var startInterval = setInterval(function(){
 
 function startGame(){
 
-  var timer = 60;
+  var timer = 5;
   var score = 0;
   var hitRn = 0;
   
@@ -51,14 +51,14 @@ function startGame(){
       } else {
         clearInterval(stopTimer);
         document.querySelector("#hitval").textContent = 0;
-        document.querySelector("#pbtm").innerHTML = `<h1>Game Over</h1> <h1>Final Score is ${score}</h1> <button id="plyBtn">Play Again</button>`;
-        document.querySelector("#plyBtn").addEventListener("click", function () {
+        document.querySelector("#pbtm").innerHTML = `<h1>Game Over</h1> <h1>Final Score is ${score}</h1> <button class="plyBtn">Play Again</button>`;
+        document.querySelector(".plyBtn").addEventListener("click", function () {
             makeBubble();
             runTimer();
             getNewHit();
             document.querySelector("#scoreval").textContent = 0;
             score = 0;
-            timer = 60;
+            timer = 5;
           });
         }
       }, 1000);
