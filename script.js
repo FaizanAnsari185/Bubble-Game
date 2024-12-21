@@ -51,9 +51,7 @@ function startGame(){
       } else {
         clearInterval(stopTimer);
         document.querySelector("#hitval").textContent = 0;
-        document.querySelector(
-          "#pbtm"
-        ).innerHTML = `<h1>Game Over</h1> <h1>Final Score is ${score}</h1> <button id="plyBtn">Play Again</button>`;
+        document.querySelector("#pbtm").innerHTML = `<h1>Game Over</h1> <h1>Final Score is ${score}</h1> <button id="plyBtn">Play Again</button>`;
         document.querySelector("#plyBtn").addEventListener("click", function () {
             makeBubble();
             runTimer();
