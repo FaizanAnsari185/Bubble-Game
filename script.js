@@ -35,12 +35,12 @@ function startGame(){
   }
   
   function makeBubble() {
-    var clutter = "";
+    var bubblePanel = "";
     for (var i = 1; i < 148; i++) {
       var randomNum = Math.floor(Math.random() * 10);
-      clutter += `<div class="bubble">${randomNum}</div>`;
+      bubblePanel += `<div class="bubble">${randomNum}</div>`;
     }
-    document.querySelector("#pbtm").innerHTML = clutter;
+    document.querySelector("#pbtm").innerHTML = bubblePanel;
   }
   
   function runTimer() {
