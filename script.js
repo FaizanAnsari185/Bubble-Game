@@ -13,7 +13,7 @@ var startInterval = setInterval(function(){
 
 function startGame(){
 
-  var timer = 5;
+  var timer = 60;
   var score = 0;
   var hitRn = 0;
   
@@ -58,7 +58,7 @@ function startGame(){
             getNewHit();
             document.querySelector("#scoreval").textContent = 0;
             score = 0;
-            timer = 5;
+            timer = 60;
           });
         }
       }, 1000);
