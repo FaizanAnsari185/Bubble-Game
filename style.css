@@ -126,7 +126,7 @@ h1::selection{
         justify-content: space-evenly;
     }
     #pbtm{
-        gap: 0px;
+        gap: 8px;
         overflow: hidden;
         padding: 10px 10px;
     }
