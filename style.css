@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(253, 237, 174);
+}
+#panel{
+    overflow: hidden;
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: cornsilk;
+}
+#ptop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 30%;
+    color: cornsilk;
+    height: 100px;
+    width: 100%;
+    background-color: rgb(235, 206, 93);
+}
+.elem{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.elem h2{
+    font-weight: 500;
+    font-size: 22px;
+}
+h2::selection{
+    background-color: white;
+    color: rgb(235, 206, 93);
+}
+.box{
+    color: rgb(151, 121, 0);
+    font-weight: 600;
+    font-size: 22px;
+    padding: 10px 20px;
+    background-color: rgb(253, 251, 241);
+    border-radius: 5px;
+}
+.box::selection{
+    background-color: rgb(151, 121, 0);
+    color: cornsilk;
+}
+#pbtm{
+    height: calc(100% - 100px);
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    color: rgb(151, 121, 0);
+}
+.bubble{
+    width: 40px;
+    height: 40px;
+    background-color: rgb(197, 162, 24);
+    color: cornsilk;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px;
+}
+.bubble::selection{
+    color: rgb(197, 162, 24);
+    background-color: cornsilk;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: rgb(168, 135, 0);
+}
+h1::selection{
+    background-color: rgb(151, 121, 0);
+    color: cornsilk;
+}
+#plyBtn{
+    background-color: rgb(197, 162, 24);
+    color: cornsilk;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+}
+#plyBtn:hover{
+    cursor: pointer;
+    background-color: rgb(168, 135, 0);
+}
+#playBtn::selection{
+    color: rgb(197, 162, 24);
+    background-color: cornsilk;
+}
+
+@media (max-width: 768px){
+    #panel{
+        height: 90%;
+        width: 95%;
+    }
+    #ptop{
+        padding: 0px 5%;
+    }
+    .elem{
+        flex-direction: column;
+        gap: 5px;
+        justify-content: space-evenly;
+    }
+    #pbtm{
+        gap: 0px;
+        overflow: hidden;
+        padding: 10px 10px;
+    }
+}
